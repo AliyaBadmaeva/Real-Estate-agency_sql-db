@@ -8,31 +8,31 @@ The output information can be considered reports (data) generated at the request
 
 After analyzing the subject area, the following tables were identified:
 
-1. Table **Real Estate objects** has the following fields: Object_id, Type_of_the_property, Type, Object_address_id, Object_Parameter_id, Agent_id, Transaction_type, Cost_without_extra_charge, Final_Cost, Encumbrances.
+1. The table **Real Estate objects** has the following fields: Object_id, Type_of_the_property, Type, Object_address_id, Object_Parameter_id, Agent_id, Transaction_type, Cost_without_extra_charge, Final_Cost, Encumbrances.
 
-2. Table **Object parameters** has the following fields: Object_parametrs_id, Construction_year, Floor, Total_floors, Material_of_house, Number_of_rooms, Living_area_in_sq, Total_building_area_sq, Balcony_available, Bathroom_type, Number_of_Bathrooms, Bathtub, Furniture, Renovation, Closet_and_storage, Concierge.
+2. The table **Object parameters** has the following fields: Object_parametrs_id, Construction_year, Floor, Total_floors, Material_of_house, Number_of_rooms, Living_area_in_sq, Total_building_area_sq, Balcony_available, Bathroom_type, Number_of_Bathrooms, Bathtub, Furniture, Renovation, Closet_and_storage, Concierge.
 
-3. Table **Object address** has the following fields: Object_address_id, Locality, Name_of_the_Locality, Street_name, Building_number, Intercome_code.
+3. The table **Object address** has the following fields: Object_address_id, Locality, Name_of_the_Locality, Street_name, Building_number, Intercome_code.
 
-4. Table **Documents for Sale** has the following fields: Document_Package_id, Property_for_Sale_id, Information_on_family_composition, Notarised_power_of_attorney, Written_consent_of_the_spouse, Title_of_ownership, Title_of_ownership_number, Technical_certificate, Statement_of_personal_account, Comment.
+4. The table **Documents for Sale** has the following fields: Document_Package_id, Property_for_Sale_id, Information_on_family_composition, Notarised_power_of_attorney, Written_consent_of_the_spouse, Title_of_ownership, Title_of_ownership_number, Technical_certificate, Statement_of_personal_account, Comment.
 
-5. Table **Users** has the following fields: User_id, User_type, Passport_Data_id, Contract_info_id, Creation_date.
+5. The table **Users** has the following fields: User_id, User_type, Passport_Data_id, Contract_info_id, Creation_date.
 
-6. Table **Contact info** has the following fields: Contact_info_id, Phone_number, Additional_phone, email.
+6. The table **Contact info** has the following fields: Contact_info_id, Phone_number, Additional_phone, email.
 
-7. Table **Passport data** has the following fields: Passport_data_id, Surname, Name, Gender, Passpor_Number, Issued_by, Date_of_issue, Registration_address.
+7. The table **Passport data** has the following fields: Passport_data_id, Surname, Name, Gender, Passpor_Number, Issued_by, Date_of_issue, Registration_address.
 
-8. Table **Contracts with agents** has the following fields: Contract_id, Agent_id, Contact_type, Contract_number, Position, Salary_per_transaction, Income_tax,Is_active, Employment_date.
+8. The table **Contracts with agents** has the following fields: Contract_id, Agent_id, Contact_type, Contract_number, Position, Salary_per_transaction, Income_tax,Is_active, Employment_date.
 
-9. Table **Contract with agency** has the following fields: ID_of_contract_with_Agency, Client_id, Contract_type, Contract_number, Contract_date, Validity_date_in_months, Service_cost, Paid, Payment_deadline.
+9. The table **Contract with agency** has the following fields: ID_of_contract_with_Agency, Client_id, Contract_type, Contract_number, Contract_date, Validity_date_in_months, Service_cost, Paid, Payment_deadline.
 
-10. Table **Sales** has the following fields: Sales_id, Object_id, Buyer_id, Transaction_type, Transaction_date, Contract_number, Cost_of_the_object, Prepayment_Date, Prepayment_amount, Transaction_completed, Transaction_closing_date
+10. The table **Sales** has the following fields: Sales_id, Object_id, Buyer_id, Transaction_type, Transaction_date, Contract_number, Cost_of_the_object, Prepayment_Date, Prepayment_amount, Transaction_completed, Transaction_closing_date
 
-11. Table **Requests for viewings** has the following fields: Request_id, Object_id, Potential_Buyer_id, Agent_id, View_date.
+11. The table **Requests for viewings** has the following fields: Request_id, Object_id, Potential_Buyer_id, Agent_id, View_date.
 
-12. Table **Object owners** has the following fields: Object_id, Owner_id.
+12. The table **Object owners** has the following fields: Object_id, Owner_id.
 
-13. Table **Photo** has the following fields: Photo_id, Object_id, Path_to_photo.
+13. The table **Photo** has the following fields: Photo_id, Object_id, Path_to_photo.
 
 The **database model** is presented in the Real_estate_agency.mwb file (mwb - > is extension of MySQL Workbench file). In this file you can see the relationships between tables, primary keys and foreign keys that link the tables.
 

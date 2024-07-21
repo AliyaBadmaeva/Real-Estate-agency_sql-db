@@ -40,6 +40,8 @@ The **database model** is presented in the Real_estate_agency.mwb file (mwb - > 
 
 The type of relationship between the “Real Estate Objects” and “Users” tables is “one-to-many”, implying “User Type” -> “Agent”. An apartment can only have one agent who sells it. In this case, one agent can sell several apartments. The "Agent id" domain of the "Real Estate Objects" table is a foreign key and refers to the "User id" domain of the "Users" table. In this case, not every user is an agent, but only the one for whom the “User Type” is selected in the Domain – “Agent”.
 
+![Image of REO_Users](https://raw.githubusercontent.com/AliyaBadmaeva/Real-Estate-agency_sql-db/756f009431af4216f411835a9ec6967a8ed790ce/REO_Users.jpg)
+
 The type of relationship between the tables “Real Estate Objects” and “Object Parameters” is “one-to-one”; the table “Object Parameters” is a reference book for the table “Real Estate Objects”. Each object has its own specific parameters. The “Object Parameters id” domain of the “Real Estate Objects” table is a foreign key that establishes a relationship between tables and refers to the primary key “Object Parameters id” of the “Object Parameters” table.
 
 In the same way, the type of relationship between the “Real Estate Objects” and “Object Address” tables is “one-to-one”; the “Object Address” table is a reference for the “Real Estate Objects” table. Each object can have one address. The “Object Address id” domain of the “Real Estate Objects” table is a foreign key that establishes a relationship between tables and refers to the primary key “Object Address id” of the “Object Address” table.
